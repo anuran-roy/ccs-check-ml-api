@@ -15,6 +15,7 @@ flake8 = "*"
 black = "*"
 uvicorn = "*"
 pytest = "*"
+requests = "*"
 
 [requires]
 python_version = "3.9"

@@ -47,3 +47,22 @@
         "score": 1.0
     }
     ```
+
+    ## Usage:
+
+    1. ### Python:
+
+    ```python
+    import requests
+
+    response = requests.post(
+        "https://ccs-checking-api.herokuapp.com/check/descriptive/",
+        json={
+            "given_answer": "Hello",
+            "keywords": ["hello"],
+            "model_answer": "Hello there!",
+        },
+    )
+
+    print(response.json())
+    ```
