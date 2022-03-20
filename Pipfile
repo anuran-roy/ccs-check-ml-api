@@ -9,6 +9,7 @@ pydantic = "*"
 typing = "*"
 gunicorn = "*"
 uvicorn = "*"
+spacy = "*"
 
 [dev-packages]
 flake8 = "*"
