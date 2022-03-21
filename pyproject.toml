@@ -1,0 +1,18 @@
+[tool]
+[tool.poetry]
+name = "ML API"
+version = "0.0.0"
+
+[tool.poetry.dependencies]
+python = "==3.9"
+fastapi = "*"
+gunicorn = "*"
+pydantic = "*"
+spacy = "*"
+uvicorn = "*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+pytest = "*"
+requests = "*"

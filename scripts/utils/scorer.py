@@ -1,5 +1,4 @@
 from models.descriptive import DescriptiveModel
-import datetime
 import spacy
 
 
@@ -12,6 +11,10 @@ class Scorer:
             self.nlp = spacy.load("en_core_web_sm")
 
     def check_similarity(self, model_answer, given_answer):
+        
+        if given_answer is None:
+            return 1
+
         model_answer_token = self.nlp(model_answer)
         given_answer_token = self.nlp(given_answer)
 
