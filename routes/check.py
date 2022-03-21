@@ -28,5 +28,5 @@ async def check_descriptive(answer: DescriptiveModel, status_code=status.HTTP_20
     scorer = Scorer()
     return {
         "status": status.HTTP_200_OK,
-        "score": scorer.score(answer)
-    } #, "weightage": answer.weightage}
+        "score": scorer.score(answer),
+    }  # , "weightage": answer.weightage}

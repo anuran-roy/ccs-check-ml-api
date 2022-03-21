@@ -39,9 +39,7 @@ class Scorer:
             #     answer.model_answer, answer.given_answer
             # ) +
             0.6 * self.check_keywords(answer.given_answer, answer.keywords)
-            + 0.4 * self.check_similarity(
-                answer.model_answer, answer.given_answer
-            ) 
+            + 0.4 * self.check_similarity(answer.model_answer, answer.given_answer)
         )
 
         return weighted_score * answer.weightage
