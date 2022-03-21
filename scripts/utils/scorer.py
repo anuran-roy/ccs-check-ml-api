@@ -11,9 +11,11 @@ class Scorer:
             self.nlp = spacy.load("en_core_web_sm")
 
     def check_similarity(self, model_answer, given_answer):
-        
-        if given_answer is None:
+        if model_answer is None:
             return 1
+
+        if given_answer is None or given_answer == "":
+            return 0
 
         model_answer_token = self.nlp(model_answer)
         given_answer_token = self.nlp(given_answer)
